@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div id="title">
+            <h1>Emmanuel</h1>
+        </div>
+    </head>
+    <body>
+        <div id="mytopnav" class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div id = "picture">
+            <img src = "https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href ="classes.html">Classes</a>
+            <a href ="classes2.html">Interest and my future</a>
+        </div>
+        <div id = "sidebutton">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        </div>
+        <br>
+        <div id="content">
+            <h2>Bio:I am a 17 year old student at Hillsboro High School.</h2>
+            <h2>One thing i would like to learn in this Web Design course is how to make a modern looking website so it could look appealing to others.</h2>
+            <h2>My favorite web page that i have made so far is the <a href="https://codehs.com/editor/html/458184/818183/index.html">Endangered Animals list</a></h2>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.body.style.backgroundColor = "#0c0e0c";
+                document.getElementById("content").style.opacity = ".5";
+                document.getElementById("mytopnav").style.backgroundColor = "#2b383b";
+                document.getElementsByClassName("fa fa-search").style.backgroundColor = "red";
+                document.getElementById("title").style.opacity = ".5";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.body.style.backgroundColor = "#171B17";
+                document.getElementById("content").style.opacity = "1";
+                document.getElementById("mytopnav").style.backgroundColor = "#ECF0F1";
+                document.getElementsByClassName("fa fa-search").style.backgroundColor = "red";
+                document.getElementById("title").style.opacity = "1";
+            }
+            </script>
+    </body>
+</html>

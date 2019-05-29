@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Anaheim|Carrois+Gothic+SC|Oleo+Script+Swash+Caps|Rubik+Mono+One|Staatliches" rel="stylesheet">
+        <!--------social-median-icon------------->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <div id="title">
-            <h1>Emmanuel</h1>
-        </div>
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Heat Wave</title>
     </head>
     <body>
-        <div id="mytopnav" class="topnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Contact.html">Contact</a>
-            <div class="search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+            <!--this is my nav bar-->
+                <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation"> <!--transparent-->
+                    <div class="top-page container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navLinks" aria-expanded="false">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">Heat Wave</a>  
+                        </div>
+                        <div class="collapse navbar-collapse " id="navLinks">
+                            <ul class="nav navbar-nav ">
+                                <li class = "spacer"><a href="Second.html">Upcoming</a></li>
+                                <li class = "spacer"><a href="third.html">Archive</a></li>
+                                <li class = "spacer"><a href="fourth.html">Meet the team</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        <!--This is my code for the front page-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class = "col-xs-12 col-lg-9 f">
+                </div>
+                <div class = "col-lg-3 col-xs-12 side-f">
+                    <div class = "side-text">
+                        <h1 class = "side-title">Heat Wave</h1><p>Keeping track of the hot drops and keeping you up to date on the hot new drops.</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-xs-12 bottom">
+                    <div class = "bottom-text">Heat Wave</div>
+                    <div class = "social-buttons">
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id = "picture">
-            <img src = "https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-        </div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href ="classes.html">Classes</a>
-            <a href ="classes2.html">Interest and my future</a>
-        </div>
-        <div id = "sidebutton">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-        </div>
-        <br>
-        <div id="content">
-            <h2>Bio:I am a 17 year old student at Hillsboro High School.</h2>
-            <h2>One thing i would like to learn in this Web Design course is how to make a modern looking website so it could look appealing to others.</h2>
-            <h2>My favorite web page that i have made so far is the <a href="https://codehs.com/editor/html/458184/818183/index.html">Endangered Animals list</a></h2>
-        </div>
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.body.style.backgroundColor = "#0c0e0c";
-                document.getElementById("content").style.opacity = ".5";
-                document.getElementById("mytopnav").style.backgroundColor = "#2b383b";
-                document.getElementsByClassName("fa fa-search").style.backgroundColor = "red";
-                document.getElementById("title").style.opacity = ".5";
-            }
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.body.style.backgroundColor = "#171B17";
-                document.getElementById("content").style.opacity = "1";
-                document.getElementById("mytopnav").style.backgroundColor = "#ECF0F1";
-                document.getElementsByClassName("fa fa-search").style.backgroundColor = "red";
-                document.getElementById("title").style.opacity = "1";
-            }
-            </script>
     </body>
 </html>

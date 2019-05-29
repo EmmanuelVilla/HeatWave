@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div id = "title">
+            <h1>Contact</h1>
+        </div>
+    </head>
+    <body>
+        <div id="mytopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a class ="active"href="Contact.html">Contact</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href ="classes.html">Classes</a>
+            <a href ="classes2.html">Interest and my future</a>
+        </div>
+        <div id = "sidebutton">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.body.style.backgroundColor = "#0c0e0c";
+                document.getElementById("content").style.opacity = ".5";
+                document.getElementById("mytopnav").style.backgroundColor = "#2b383b";
+                document.getElementsByClassName("fa fa-search").style.backgroundColor = "red";
+                document.getElementById("title").style.opacity = ".5";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.body.style.backgroundColor = "#171B17";
+                document.getElementById("content").style.opacity = "1";
+                document.getElementById("mytopnav").style.backgroundColor = "#ECF0F1";
+                document.getElementsByClassName("fa fa-search").style.backgroundColor = "red";
+                document.getElementById("title").style.opacity = "1";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div id = "title">
+        <h1>Interest and my future</h1>
+        </div>
+    </head>
+    <body>
+        <div id="mytopnav" class="topnav">
+            <a class="active" href="classes2.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href ="index.html">Front Page</a>
+            <a href ="classes.html">Classes</a>
+        </div>
+        <div id = "sidebutton">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        </div>
+        
+        <div id = "section4">
+            <div class = "textheader">
+                <h2>Drafting</h2>
+            </div>
+            <p>In school right now I am doing the drafting pathway. It consist of taking two robotics class and all three drafitng courses over my four years in school. Drafting consist of drawing lines to create shapes that will be the blueprints of objects this can be used to plan the creation of objects on a 2D or 3D plane. </p>
+        </div>
+        <div id = "section3">
+            <div class = "textheader">
+                <h2>Web Design</h2>
+            </div>
+             <p>Web design is a new thing i got into since its the first time the class has been available at my school. I really got into it because i enjoyed how much creativity you need to put in to make your page look professional and unique. A big milestone i took is interning for the school district learning more about web design and the behind the scenes of the school website.</p>
+        </div>
+        <div id="section2">
+            <div class = "textheader">
+                <h2>My Next Step</h2>
+            </div>
+            <p>Once im done with highschool i'll be attending PCC for two years. I hope to be studying Website development and design or some sort of computer programming. After 2 years i hope to transfer to another college to further my education.</p>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.body.style.backgroundColor = "#0c0e0c";
+                document.getElementById("content").style.opacity = ".5";
+                document.getElementById("mytopnav").style.backgroundColor = "#2b383b";
+                document.getElementsByClassName("fa fa-search").style.backgroundColor = "red";
+                document.getElementById("title").style.opacity = ".5";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.body.style.backgroundColor = "#171B17";
+                document.getElementById("content").style.opacity = "1";
+                document.getElementById("mytopnav").style.backgroundColor = "#ECF0F1";
+                document.getElementsByClassName("fa fa-search").style.backgroundColor = "red";
+                document.getElementById("title").style.opacity = "1";
+            }
+            </script>
+    </body>
+</html>

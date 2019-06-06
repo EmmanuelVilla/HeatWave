@@ -1,11 +1,158 @@
+.shoe-space{
+    height:150px;
+    ackground-color:red;
+}
+.shoe-space-two{
+    height:120px;
+    ackground-color:red;
+}
+
+.shoe-space-three{
+    height:50px;
+}
+.upcoming-info{
+    height:1000px;
+    background-color:black;
+    order:solid 1px yellow;
+}
+
+.upcoming-pic{
+    height:1000px;
+    background-color:black;
+    order:solid 1px yellow;
+}
+
+.upcoming-pic-small img{
+    width:380px;
+    height:266px;
+    display:none;
+    order:solid 1px red;
+    ackground-color:blue;
+}
+
+.upcoming-pic-small-two img{
+    height:268px;
+    width:500px;
+    order:red 1px solid;
+    margin-left:-20px;
+    display:none;
+    
+}
+
+.up-pic{
+    height:200px;
+    width:400px;
+    ackground-color:red;
+    margin-left:120px;
+    margin-top:120px;
+    
+}
+
+.up-pic-two{
+    height:200px;
+    width:400px;
+    ackground-color:red;
+    margin-left:120px;
+    margin-top:120px;
+    
+}
+
+.up-pic-two img{
+    height:214px;
+    width:400px;
+    order:red 1px solid;
+    
+}
+
+.up-pic img{
+    width:380px;
+    height:266px;
+    order:red 1px solid;
+}
+
+.up-side{
+    height:1000px;
+    background-color:black;
+}
+
+.shoe-info{
+    width:500px;
+    height:400px;
+    order:1px solid black;
+    margin-top:150px;
+    margin-left:200px;
+    color:white;
+    ackground-color:red;
+}
+
+.info-header{
+    font-size:30px;
+    order:solid black 1px;
+    width:200px;
+    text-align:center;
+    margin-left:135px;
+    font-family: 'Oswald', sans-serif;
+    ont-family: 'Pragati Narrow', sans-serif;
+}
+
+.info{
+    font-size:20px;
+    text-indent:20px;
+    font-family: 'Oswald', sans-serif;
+    ont-family: 'Pragati Narrow', sans-serif;
+    order:1px solid black;
+}
+
+@media screen and (max-width:992px) {
+    .shoe-space{
+        display:none;
+    }
+    .shoe-space-two{
+        display:none;
+    }
+    .info-header{
+        margin-left:110px;
+    }
+    .up-side{
+        background-color:green;
+        display:none;
+    }
+    .upcoming-info{
+        height:1700px;
+    }
+    .shoe-info{
+        margin-left:0px;
+        width:400px;
+        ackground-color:green;
+    }   
+    .upcoming-pic{
+        display:none;
+    }
+    .upcoming-pic-small img{
+        display:block;
+        
+    }
+    
+    .upcoming-pic-small-two img{
+        display:block;
+        order:red 1px solid;
+        width:460px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1700px){
+    .shoe-info{
+        margin-left:42px;
+    }
+}
 /*-------------------------Navbar---------------------*/
 .navbar-toggle .icon-bar{
     display: block;
     width: 22px;
     height: 2px;
     border-radius: 1px;
-    background-color: black
+    background-color: white;
 }
+
 .navbar a {
     color:white;
 }
@@ -49,14 +196,14 @@ d{
 @media screen and (max-width:992px){
     .f{
         background-image:url("https://codehs.com/uploads/6f8ed8537852cbbc50efb410f1b34eae");
-        height:450px;
+        height:275px;
     }
     
 }
 /*------Front-Side--------*/
 
 .side-f{
-    background-color: #FFFAF0; 
+    background-image:linear-gradient(#6F3710,#5A318C);
     height:900px;
 }
 .side-title{
@@ -194,7 +341,7 @@ d{
     background-color:#692bde;
     height:600px;
     width:600px;
-    font-size:200px;
+    font-size:40px;
     color:white;
     margin-left:200px;
     margin-top:200px;
@@ -205,11 +352,17 @@ d{
     transition:width .5s, height,.5s;
 
 }
+.team-info p{
+    font-size:37px;
+    text-align:left;
+    padding-left:15px;
+    padding-top:10px;
+}
 .team-info2{
     background-color:#e05236;
     height:600px;
     width:600px;
-    font-size:200px;
+    font-size:40px;
     color:white;
     margin-left:1100px;
     margin-top:-600px;
@@ -218,6 +371,13 @@ d{
     padding-top:125px;
     cursor: pointer;
     transition:width .5s, height ,.5s;
+}
+
+.team-info2 p{
+    font-size:37px;
+    text-align:left;
+    padding-left:15px;
+    padding-top:10px;
 }
 .team-active{
     background-color:red;
@@ -228,6 +388,34 @@ d{
 .team{
     background-image:linear-gradient(#e05236,#692bde);
     height:975px;
+}
+
+@media screen and (max-width:992px) {
+    .team-info{
+        margin-left:40px;
+        margin-top:70px;
+        padding-top:90px;
+        width:350px;
+        height:350px;
+        font-size:35px;
+    }
+    
+    .team-info p{
+        font-size:20px;
+    }
+    
+    .team-info2{
+        margin-left:40px;
+        margin-top:70px;
+        padding-top:90px;
+        width:350px;
+        height:350px;
+        font-size:35px;
+    }
+    
+    .team-info2 p{
+        font-size:20px;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1700px){
@@ -244,3 +432,4 @@ d{
         margin-top:100px;
     }
 }
+    
